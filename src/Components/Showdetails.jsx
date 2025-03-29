@@ -46,9 +46,10 @@ export const Showdetails = () => {
       exit={{ opacity: 0 }}
     >
       <motion.div
-        className={`relative bg-gradient-to-br ${colors.primary} ${colors.secondary}  p-8 rounded-3xl shadow-2xl text-white w-full max-w-md border border-white/10 overflow-hidden`}
+        className={`relative bg-gradient-to-br ${colors.primary} ${colors.secondary} p-8 rounded-3xl shadow-2xl text-white w-full h-[79%] md:h-[89%] max-w-md border border-white/10 overflow-hidden`}
         initial={{ scale: 0.8, rotate: -8 }}
         animate={{ scale: 1, rotate: 0 }}
+        
       >
         {/* Dynamic Overlay */}
         <div
@@ -165,9 +166,7 @@ export const Showdetails = () => {
                   whileHover={{ scale: 1.05 }}
                   src={TypeConst[weakType]}
                   className="h-10 "
-                 
                 >
-                  
                 </motion.img>
               );
             })}
