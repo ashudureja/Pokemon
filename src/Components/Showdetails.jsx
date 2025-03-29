@@ -148,7 +148,7 @@ export const Showdetails = () => {
         </div>
 
         {/* Weaknesses */}
-        <div className="mt-6">
+        <div className="md:mt-6 mt-2 ">
           <h3
             className={`text-lg font-semibold text-${
               colors.secondary.split("-")[1]
