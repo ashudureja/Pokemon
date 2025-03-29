@@ -15,6 +15,7 @@ const Catch = () => {
           className="h-[85%] w-[90%] md:h-98 md:w-150 absolute top-[8%] md:top-[1%] left-1/2 -translate-x-1/2 md:left-39 md:scale-[102%] md:translate-x-0 rounded-xl"
           src="./vd1.mp4"
           autoPlay
+          playsInline
           muted
           loop
         ></video>

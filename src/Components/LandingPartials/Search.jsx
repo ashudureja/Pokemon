@@ -164,10 +164,10 @@ const Search = () => {
   }, []);
 
   return (
-    <div className="bg-black lg:h-[270vh] h-[360vh] w-full p-23 relative">
+    <div className="bg-black lg:h-[270vh] h-[380vh] w-full lg:p-23 p-10 relative">
       <div className="flex md:flex-row flex-col gap-10 items-center">
         <img
-          className="sm:h-50 h-40"
+          className="sm:h-50 h-40 mt-10 lg:mt-0"
           src="https://pokedexplore.vercel.app/pokemons/treinador-pk.png"
           alt="Trainer"
         />

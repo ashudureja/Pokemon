@@ -9,7 +9,7 @@ import Navbar1 from "./Navbar1";
 
 const About = () => {
   return (
-    <div className="h-[105vh] relative sm:h-[210vh] w-full bg-[#FF8000] p-10 flex flex-col items-center">
+    <div className="h-[115vh] relative sm:h-[210vh] w-full bg-[#FF8000] p-10 flex flex-col items-center">
       <Navbar1 />
       <div className="flex flex-col sm:flex-row items-center">
         <img
