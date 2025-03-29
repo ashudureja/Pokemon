@@ -46,7 +46,7 @@ export const Showdetails = () => {
       exit={{ opacity: 0 }}
     >
       <motion.div
-        className={`relative bg-gradient-to-br ${colors.primary} ${colors.secondary} lg:p-8 p-2 rounded-3xl shadow-2xl text-white w-full h-[89%] md:h-[89%] max-w-md border border-white/10 overflow-hidden`}
+        className={`relative bg-gradient-to-br ${colors.primary} ${colors.secondary} lg:p-8 p-2 rounded-3xl shadow-2xl text-white w-full h-[96%] md:h-[89%] max-w-md border border-white/10 overflow-hidden`}
         initial={{ scale: 0.8, rotate: -8 }}
         animate={{ scale: 1, rotate: 0 }}
         
