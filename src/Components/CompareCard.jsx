@@ -146,7 +146,7 @@ export const CompareCard = ({ pokemonInfo, index }) => {
 
   return (
     <motion.div
-      className={`relative w-full h-[73vh] sm:h-[78vh] max-w-md rounded-2xl shadow-2xl overflow-hidden border-2 border-white/20 
+      className={`relative w-full h-[76vh] sm:h-[78vh] max-w-md rounded-2xl shadow-2xl overflow-hidden border-2 border-white/20 
           bg-gradient-to-br ${colors.gradient} text-white`}
       initial={{ scale: 0.8, rotate: -8, opacity: 0 }}
       animate={{ scale: 1, rotate: 0, opacity: 1 }}
@@ -253,7 +253,7 @@ export const CompareCard = ({ pokemonInfo, index }) => {
 
           {/* Weaknesses */}
           <div className="w-full mt-2">
-            <h3 className="text-lg font-semibold text-white/90 mb-3">
+            <h3 className="text-lg font-semibold text-white/90 lg:mb-3 mb-1">
               Weaknesses
             </h3>
             <div className="flex flex-wrap gap-3 justify-center">
