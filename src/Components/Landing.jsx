@@ -5,8 +5,8 @@ import Compare from "./LandingPartials/Compare";
 import Catch from "./LandingPartials/Catch";
 
 import { useDispatch, useSelector } from "react-redux";
-import { initialPokemonData } from "../Store/APIcalls.jsx/InitialData";
-import { pokemonDetails } from "../Store/APIcalls.jsx/PokemonDetails";
+// import { initialPokemonData } from "../Store/APIcalls.jsx/InitialData";
+// import { pokemonDetails } from "../Store/APIcalls.jsx/PokemonDetails";
 
 const Landing = () => {
   const dispatch = useDispatch();

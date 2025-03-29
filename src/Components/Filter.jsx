@@ -3,8 +3,8 @@ import { TypeConst } from "../Utils/TypeConst";
 import { motion } from "framer-motion";
 import { LuFileSearch2 } from "react-icons/lu";
 import { useSelector,useDispatch } from "react-redux";
-import { initialPokemonData } from "../Store/APIcalls.jsx/InitialData";
-import { pokemonDetails } from "../Store/APIcalls.jsx/PokemonDetails";
+// import { initialPokemonData } from "../Store/APIcalls.jsx/InitialData";
+// import { pokemonDetails } from "../Store/APIcalls.jsx/PokemonDetails";
 import { addfilter } from "../Store/Slicer.jsx/PokemonSlice";
 
 const arr = Object.entries(TypeConst);

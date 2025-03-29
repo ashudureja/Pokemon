@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { debounce } from "../../Utils/Debounce";
 import { CiSearch } from "react-icons/ci";
 
-import { pokemonDetails } from "../../Store/APIcalls.jsx/PokemonDetails";
+// import { pokemonDetails } from "../../Store/APIcalls.jsx/PokemonDetails";
 import { addfilter } from "../../Store/Slicer.jsx/PokemonSlice";
 
 const Input = () => {

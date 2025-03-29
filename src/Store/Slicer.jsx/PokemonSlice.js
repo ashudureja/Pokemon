@@ -1,9 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { initialPokemonData } from "../APIcalls.jsx/InitialData";
-import { pokemonDetails } from "../APIcalls.jsx/PokemonDetails";
+// import { pokemonDetails } from "../APIcalls.jsx/PokemonDetails";
+import { fetchPokemonData } from "../APIcalls.jsx/PokemonDetails";
 
 const initialState = {
-  allPokemon: undefined,
+ 
   currentPokemon: undefined,
   filteredPokemon: undefined,
   randomPokemon: undefined,
@@ -81,12 +82,9 @@ export const pokemonSlice = createSlice({
   },
 
   extraReducers: (builder) => {
-    builder.addCase(initialPokemonData.fulfilled, (state, action) => {
-      state.allPokemon = action.payload;
-    }),
-      builder.addCase(pokemonDetails.fulfilled, (state, action) => {
-        state.randomPokemon = action.payload;
-      });
+    builder.addCase( fetchPokemonData.fulfilled, (state, action) => {
+      state.randomPokemon = action.payload;
+    });
   },
 });
 

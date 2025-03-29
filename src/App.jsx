@@ -5,8 +5,9 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import Search from "./Pages/Search";
 import Compare from "./Pages/Compare";
 import Add from "./Pages/Add";
-import { initialPokemonData } from "./Store/APIcalls.jsx/InitialData";
-import { pokemonDetails } from "./Store/APIcalls.jsx/PokemonDetails";
+// import { initialPokemonData } from "./Store/APIcalls.jsx/InitialData";
+// import { pokemonDetails } from "./Store/APIcalls.jsx/PokemonDetails";
+import { fetchPokemonData } from "./Store/APIcalls.jsx/PokemonDetails";
 import { Showdetails } from "./Components/Showdetails";
 
 import { useSelector, useDispatch } from "react-redux";
@@ -33,18 +34,18 @@ const App = () => {
 
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(initialPokemonData());
+    dispatch( fetchPokemonData());
   }, [dispatch]);
 
-  useEffect(() => {
-    if (allPokemon) {
-      const copy = [...allPokemon];
-      const copy1 = copy.slice(0, 500);
-      const randomPokemons = copy1.sort(() => Math.random() - Math.random());
+  // useEffect(() => {
+  //   if (allPokemon) {
+  //     const copy = [...allPokemon];
+  //     const copy1 = copy.slice(0, 500);
+  //     const randomPokemons = copy1.sort(() => Math.random() - Math.random());
 
-      dispatch(pokemonDetails(randomPokemons));
-    }
-  }, [dispatch, allPokemon]);
+  //     dispatch(pokemonDetails(randomPokemons));
+  //   }
+  // }, [dispatch, allPokemon]);
 
   useEffect(() => {
     // Disable scrolling when Showdetails is active
