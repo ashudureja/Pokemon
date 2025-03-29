@@ -101,11 +101,11 @@ const Compare = () => {
 
       {/* Comparison Sections */}
 
-      <div className="flex sm:flex-row flex-col mt-150 sm:mt-20 w-full items-center justify-between gap-7 sm:gap-12">
+      <div className="flex sm:flex-row  flex-col mt-163 sm:mt-20 w-full items-center justify-between gap-7 sm:gap-12">
         {/* First Pokémon Card */}
         {!firstPokemon ? (
           <motion.div
-            className="relative w-full h-[67vh] sm:h-[78vh] max-w-md rounded-2xl shadow-2xl overflow-hidden border-2 border-white/20"
+            className="relative w-full h-[73vh] sm:h-[78vh] max-w-md rounded-2xl shadow-2xl overflow-hidden border-2 border-white/20"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
           >
@@ -129,7 +129,7 @@ const Compare = () => {
         {/* Second Pokémon Card */}
         {!secondPokemon ? (
           <motion.div
-            className="relative w-full h-[67vh] sm:h-[78vh] max-w-md rounded-2xl shadow-2xl overflow-hidden border-2 border-white/20"
+            className="relative w-full h-[73vh] sm:h-[78vh] max-w-md rounded-2xl shadow-2xl overflow-hidden border-2 border-white/20"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
           >

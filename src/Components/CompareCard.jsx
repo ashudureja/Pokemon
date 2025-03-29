@@ -13,11 +13,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { addUser } from "../Store/Slicer.jsx/PokemonSlice";
 
 export const CompareCard = ({ pokemonInfo, index }) => {
-  if (!pokemonInfo) {
-    return (
-      ""
-    );
-  }
+  
   
   const compareQue = useSelector((store) => store.pokemon.compareQue);
   const handleClose = (index) => {
@@ -150,7 +146,7 @@ export const CompareCard = ({ pokemonInfo, index }) => {
 
   return (
     <motion.div
-      className={`relative w-full h-[67vh] sm:h-[78vh] max-w-md rounded-2xl shadow-2xl overflow-hidden border-2 border-white/20 
+      className={`relative w-full h-[73vh] sm:h-[78vh] max-w-md rounded-2xl shadow-2xl overflow-hidden border-2 border-white/20 
           bg-gradient-to-br ${colors.gradient} text-white`}
       initial={{ scale: 0.8, rotate: -8, opacity: 0 }}
       animate={{ scale: 1, rotate: 0, opacity: 1 }}
