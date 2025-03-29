@@ -94,7 +94,7 @@ const Cards = ({ data, flag = true }) => {
         <motion.div
           onClick={() => handleClick(pokemon)}
           key={index}
-          className="relative border-[0.1px] border-white/20 w-70 lg:w-76 h-80 lg:h-95 p-4 lg:p-5 rounded-[12%] shadow-lg text-white flex flex-col justify-center items-center "
+          className="relative border-[0.1px] border-white/20 w-70 lg:w-76 h-80 lg:h-95 p-5 lg:p-5 rounded-[12%] shadow-lg text-white flex flex-col justify-center items-center "
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           style={{

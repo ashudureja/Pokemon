@@ -15,7 +15,7 @@ const Search = () => {
   const location = useLocation();
 
   return (
-    <div className="w-full bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 p-10">
+    <div className="w-full h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 p-10">
       {!randomPokemon ? (
         <LoadingScreen />
       ) : (

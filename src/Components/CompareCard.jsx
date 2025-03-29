@@ -253,7 +253,7 @@ export const CompareCard = ({ pokemonInfo, index }) => {
 
           {/* Weaknesses */}
           <div className="w-full mt-2">
-            <h3 className="text-lg font-semibold text-white/90 lg:mb-3 mb-1">
+            <h3 className="text-lg font-semibold text-white/90 lg:mb-3 mb-2">
               Weaknesses
             </h3>
             <div className="flex flex-wrap gap-3 justify-center">

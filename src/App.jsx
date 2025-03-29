@@ -92,7 +92,7 @@ const App = () => {
                 index
                 element={
                   <motion.div
-                    initial={{ opacity: 0, filter: "blur(16px)" }}
+                    initial={{ opacity: 0, filter: "blur(12px)" }}
                     animate={{ opacity: 1, filter: "blur(0px)" }}
                     exit={{ opacity: 0, filter: "blur(12px)" }}
                     transition={{
