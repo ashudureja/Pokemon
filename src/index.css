@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+.floating-nav {
+    @apply bg-black/70 backdrop-blur-lg rounded-md shadow-lg transition-all duration-200;
+    /* Adds glass-morphism effect and smooth transitions */
+  }
+
+  .nav-hover-btn {
+    @apply relative lg:ms-10 ms-5 text-sm font-bold uppercase text-white after:absolute after:-bottom-0.5 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-zinc-100 after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 dark:after:bg-white cursor-pointer;
+  }
+
+  /* input:focus {
+    outline: none;
+    
+  } */
+
+  .wave-container {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Adjust the height based on your image size */
+    overflow: hidden;
+  }
+  
+  .wave-image {
+    position: absolute;
+    bottom: 0; /* Align the wave at the bottom of the container */
+    width: 100%;
+  }
+  
+
+  .bg-noise {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 1024 1024' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  }
+
+  .slide-in {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #0f0f0f;
+    transform-origin: bottom;
+}
+
+.slide-out {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #0f0f0f;
+    transform-origin: top;
+}
+  
+
+  

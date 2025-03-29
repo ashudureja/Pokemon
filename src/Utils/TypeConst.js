@@ -1,0 +1,21 @@
+export const TypeConst = {
+    bug: "/types/bug.png",
+    dark: "/types/dark.svg",
+    dragon: "/types/dragon.png",
+    electric: "/types/electric.svg",
+    fairy: "/types/fairy.svg",
+    fighting: "/types/fighting.svg",
+    fire: "/types/fire.png",
+    flying: "/types/flying.png",
+    ghost: "/types/ghost.png",
+    grass: "/types/grass.png",
+    ground: "/types/ground.svg",
+    ice: "/types/ice.svg",
+    normal: "/types/normal.svg",
+    poison: "/types/poison.svg",
+    psychic: "/types/psychic.svg",
+    rock: "/types/rock.svg",
+    steel: "/types/steel.svg",
+    water: "/types/water.svg",
+  };
+  
