@@ -15,7 +15,7 @@ const Search = () => {
   const location = useLocation();
 
   return (
-    <div className="w-full h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 p-10">
+    <div className="w-full h-[130vh] bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 p-10">
       {!randomPokemon ? (
         <LoadingScreen />
       ) : (
@@ -31,7 +31,7 @@ const Search = () => {
           <div className="mt-25 lg:mt-40">
             <Cards data={filteredPokemon || randomPokemon} />
           </div>
-          <div className="h-[200px] w-full mt-10 "></div>
+          {/* <div className="  h-[200px]  w-full  "></div> */}
 
         </>
       )}
