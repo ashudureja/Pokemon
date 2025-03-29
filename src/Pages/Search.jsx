@@ -31,6 +31,8 @@ const Search = () => {
           <div className="mt-25 lg:mt-40">
             <Cards data={filteredPokemon || randomPokemon} />
           </div>
+          <div className="h-[200px] w-full mt-10 "></div>
+
         </>
       )}
     </div>
